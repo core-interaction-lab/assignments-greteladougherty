@@ -5,7 +5,7 @@ a:active {text-decoration: none; color:darkgoldenrod;}
 
 .content{align-content: center;text-align: center;}
 #text{font-family: arial, sans-serif;
-font-size: 50px;}
+font-size: 50px; font-style: bold;}
 
 .button {
     background-color: lavenderblush;
