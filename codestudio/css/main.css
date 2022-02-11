@@ -1,14 +1,17 @@
-a:link { text-decoration: none; color: purple;}
-a:visited { text-decoration: none; color: purple; }
-a:hover {text-decoration: none; color: lavenderblush;}
-a:active {text-decoration: none; color:darkgoldenrod;}
+a:link { text-decoration: none; color: olivedrab;}
+a:visited { text-decoration: none; color: olivedrab; }
+a:hover {text-decoration: none; color: darkseagreen;}
+a:active {text-decoration: none; color:darkolivegreen;}
+
+.jungle {width:100%; opacity: 20%;
+  z-index: 1;}
 
 .content{align-content: center;text-align: center;}
-#text{font-family: arial, sans-serif;
-font-size: 50px; font-style: bold;}
+#text{font-family: 'Syne Tactile', cursive;
+font-size: 50px; font-style: bold; color: darkolivegreen;z-index: 2;}
 
 .button {
-    background-color: lavenderblush;
+    background-color: darkseagreen;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -17,12 +20,13 @@ font-size: 50px; font-style: bold;}
     display: inline-block;
     font-size: 16px;
     border: 2px solid black;
-    font-size: 50px;
+    font-size: 100px;
+    font-family: 'Syne Tactile', cursive;
   }
 
   .button:hover {
-    background-color: purple;
-    color: lavenderblush;
+    background-color: olivedrab;
+    color: darkseagreen;
   }
 
   #round {
