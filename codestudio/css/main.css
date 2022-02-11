@@ -11,6 +11,17 @@ a:active {text-decoration: none; color:darkolivegreen;}
 font-size: 50px; font-style: bold; color: darkolivegreen;z-index: 2;}
 
 /* commenb */
+#bg{
+  background:url(https://offgridsurvival.com/wp-content/themes/church_10/images/2008/05/jungle.jpg) no-repeat;
+  background-size: cover;
+  width:100vw;
+  height:100vh;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:-1;
+  opacity: .4;
+}
 .button {
     background-color: darkseagreen;
     border: none;
