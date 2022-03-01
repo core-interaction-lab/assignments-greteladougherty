@@ -1,0 +1,45 @@
+body {
+    width: 60%;
+    margin: auto;
+    background-color: yellowgreen;
+}
+
+h1, h2{font-family: 'Syne Tactile', cursive;}
+
+p{
+    line-height: 2rem;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.breaker {
+    display: inline-block;
+    width: 10px;
+    height: 1rem;
+    border:3px solid olivedrab;
+    border-radius: 100px;
+    transition: all 2.0s ease;
+}
+.breaker:hover {
+    width: 200px;
+    height: 50px;
+    
+}
+.grow { 
+    display: inline-block;
+transition: all .5s ease; 
+color: olivedrab;
+}
+
+.grow:hover { 
+/*transform: scale(5.0);*/
+font-size: 1.5rem;
+}
+.container {
+transition: all 0.3 ease;
+height: 100vh;
+}
+p {
+transition: all 0.3s ease;
+}
+.grow-1:hover + p {
+line-height: .5;
+}
