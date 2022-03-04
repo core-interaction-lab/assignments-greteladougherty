@@ -20,7 +20,7 @@
   }
 
   .circle1:hover{
-      
+    background-color: olivedrab;
   }
 
   .circle2 {
@@ -34,7 +34,6 @@
   }
 
   .circle2:hover{
-    background-color: yellowgreen;
 }
 body {
     width: 60%;
@@ -50,6 +49,7 @@ p{
     font-family: Helvetica, Arial, sans-serif;
     padding: 40px;
     transition: all 0.3s ease;
+    color: olivedrab;
 }
 .breaker {
     display: inline-block;
@@ -77,11 +77,14 @@ font-size: 1.5rem;
 .container {
 transition: all 0.3 ease;
 height: 100vh;
-border: 3px solid olivedrab;
+border: 3px solid yellowgreen;
 border-radius: 100px;
-background-color: yellowgreen;
+background-color: olivedrab;
 }
 
 .grow-1:hover + p {
 line-height: .5;
+}
+.alt{
+    color: black;
 }
