@@ -3,7 +3,7 @@
 }
 
 .nav__circles{
-    margin: 0 auto 15px auto;
+    margin: 40px;
 }
 
 .nav__circles ul{
@@ -16,8 +16,8 @@
 .nav__circles_circle1 {
     height: 40px;
     width: 40px;
-    background-color: yellowgreen;
-    border: 3px solid olivedrab;
+    background-color: hsl(69, 78%, 49%);
+    border: 3px solid hsl(75, 50%, 40%);
     border-radius: 50%;
     display: flex;
     margin: 20px 0 10px 0px ;
@@ -30,27 +30,30 @@
 .nav__circles_circle2 {
     height: 40px;
     width: 40px;
-    background-color: olivedrab;
-    border: 3px solid yellowgreen;
+    background-color: hsl(75, 50%, 40%);
+    border: 3px solid hsl(69, 78%, 49%);
     border-radius: 50%;
     display: flex;
     margin: 20px 0 10px 10px;
   }
 
 .nav__circles_circle2:hover{
-    background-color: yellowgreen;
+    background-color: hsl(69, 78%, 49%);
 }
 body {
     margin: auto;
-    background-color: antiquewhite;
+    background-color: hsl(89, 78%, 92%);
 }
 .body__container {
-    background-color: yellowgreen;
+    background-color: hsl(69, 78%, 49%);
     }
     
-h1, h2{font-family: Arial, Helvetica, sans-serif;}
+h1, h2{font-family: 'Syne Tactile', cursive;}
 
-h2{color: olivedrab;}
+h1{font-size: 50px;}
+
+h2{color: hsl(75, 50%, 40%);
+font-size: 30px;}
 
 p{
     line-height: 2rem;
@@ -63,7 +66,7 @@ p{
     display: inline-block;
     width: 20px;
     height: 20px;
-    border:3px solid olivedrab;
+    border:3px solid hsl(75, 50%, 40%);
     border-radius: 100px;
     transition: all 2.0s ease;
 }
@@ -71,6 +74,25 @@ p{
     width: 200px;
     height: 50px;
     
+}
+
+@media(max-width:800px) {
+    .nav__circles{
+        margin: 20px;
+    }
+
+    .header{
+        margin: 25px;
+    }
+
+    h1{font-size: 30px;}
+    
+    h2{color: hsl(75, 50%, 40%);
+    font-size: 24px;}
+
+    p{
+        padding: 20px;
+    }
 }
 
 /*

@@ -1,15 +1,19 @@
-.circles{
+.header{
+    margin: 40px;
+}
+
+.nav__circles{
     margin: 0 auto 15px auto;
 }
 
-.circles ul{
+.nav__circles ul{
     padding: 0;
     margin: 0;
     list-style-type: none;
     display: flex;
 }
 
-.circle1 {
+.nav__circles_circle1 {
     height: 40px;
     width: 40px;
     background-color: yellowgreen;
@@ -19,11 +23,11 @@
     margin: 20px 0 10px 0px ;
   }
 
-  .circle1:hover{
-    background-color: olivedrab;
+.nav__circles_circle1:hover{
+    background-color: olivedrab
   }
 
-  .circle2 {
+.nav__circles_circle2 {
     height: 40px;
     width: 40px;
     background-color: olivedrab;
@@ -33,15 +37,20 @@
     margin: 20px 0 10px 10px;
   }
 
-  .circle2:hover{
+.nav__circles_circle2:hover{
+    
 }
 body {
-    width: 60%;
     margin: auto;
     background-color: antiquewhite;
 }
-
+.body__container {
+    background-color: yellowgreen;
+    }
+    
 h1, h2{font-family: Arial, Helvetica, sans-serif;}
+
+h2{color: olivedrab;}
 
 p{
     line-height: 2rem;
@@ -49,7 +58,6 @@ p{
     font-family: Helvetica, Arial, sans-serif;
     padding: 40px;
     transition: all 0.3s ease;
-    color: olivedrab;
 }
 .breaker {
     display: inline-block;
@@ -64,6 +72,17 @@ p{
     height: 50px;
     
 }
+
+@media(max-width:900px) {
+    .header{
+        margin: 15px;
+    }
+}
+
+/*
+.grow-1:hover + p {
+line-height: .5;
+}
 .grow { 
     display: inline-block;
 transition: all .5s ease; 
@@ -71,20 +90,6 @@ color: olivedrab;
 }
 
 .grow:hover { 
-/*transform: scale(5.0);*/
+transform: scale(5.0);
 font-size: 1.5rem;
-}
-.container {
-transition: all 0.3 ease;
-height: 100vh;
-border: 3px solid yellowgreen;
-border-radius: 100px;
-background-color: olivedrab;
-}
-
-.grow-1:hover + p {
-line-height: .5;
-}
-.alt{
-    color: black;
 }

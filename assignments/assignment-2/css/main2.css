@@ -16,41 +16,45 @@
 .nav__circles_circle1 {
     height: 40px;
     width: 40px;
-    background-color: yellowgreen;
-    border: 3px solid olivedrab;
+    background-color: hsl(69, 78%, 49%);
+    border: 3px solid hsl(75, 50%, 40%);
     border-radius: 50%;
     display: flex;
     margin: 20px 0 10px 0px ;
   }
 
-.nav__circles_circle1:hover{
-      
+  .nav__circles_circle1:hover{
+    background-color: hsl(75, 50%, 40%);
   }
 
-.nav__circles_circle2 {
+  .nav__circles_circle2 {
     height: 40px;
     width: 40px;
-    background-color: olivedrab;
-    border: 3px solid yellowgreen;
+    background-color: hsl(75, 50%, 40%);
+    border: 3px solid hsl(69, 78%, 49%);
     border-radius: 50%;
     display: flex;
     margin: 20px 0 10px 10px;
   }
 
-.nav__circles_circle2:hover{
-    background-color: yellowgreen;
+  .nav__circles_circle2:hover{
 }
 body {
     margin: auto;
-    background-color: antiquewhite;
+    background-color: hsl(89, 78%, 92%);
 }
-.body__container {
-    background-color: yellowgreen;
-    }
-    
-h1, h2{font-family: Arial, Helvetica, sans-serif;}
 
-h2{color: olivedrab;}
+.body__container {
+    background-color: hsl(75, 50%, 40%);
+    }
+
+    h1, h2{font-family: 'Syne Tactile', cursive;}
+
+    h1{font-size: 50px;}
+    
+    h2{color: hsl(75, 50%, 40%);
+    font-size: 30px;}
+    
 
 p{
     line-height: 2rem;
@@ -58,12 +62,13 @@ p{
     font-family: Helvetica, Arial, sans-serif;
     padding: 40px;
     transition: all 0.3s ease;
+    color: hsl(75, 50%, 40%);
 }
 .breaker {
     display: inline-block;
     width: 20px;
     height: 20px;
-    border:3px solid olivedrab;
+    border:3px solid hsl(75, 50%, 40%);
     border-radius: 100px;
     transition: all 2.0s ease;
 }
@@ -73,10 +78,25 @@ p{
     
 }
 
-/*
-.grow-1:hover + p {
-line-height: .5;
+
+@media(max-width:800px) {
+    .nav__circles{
+        margin: 20px;
+    }
+
+    .header{
+        margin: 25px;
+    }
+
+    h1{font-size: 30px;}
+    
+    h2{ font-size: 24px;}
+
+    p{
+        padding: 20px;
+    }
 }
+/*
 .grow { 
     display: inline-block;
 transition: all .5s ease; 
@@ -84,6 +104,12 @@ color: olivedrab;
 }
 
 .grow:hover { 
-transform: scale(5.0);
-font-size: 1.5rem;
+    transform: scale(5.0);
+    font-size: 1.5rem;
+    }
+.grow-1:hover + p {
+line-height: .5;
+}
+.alt{
+    color: black;
 }
