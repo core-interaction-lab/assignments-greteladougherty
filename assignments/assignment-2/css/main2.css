@@ -24,7 +24,7 @@ body {
     height: 40px;
     width: 40px;
     background-color: hsl(69, 78%, 49%);
-    border: 3px solid hsl(75, 50%, 40%);
+    border: 2px solid hsl(75, 50%, 40%);
     border-radius: 50%;
     display: flex;
     margin: 0px ;
@@ -38,7 +38,7 @@ body {
     height: 40px;
     width: 40px;
     background-color: hsl(75, 50%, 40%);
-    border: 3px solid hsl(69, 78%, 49%);
+    border: 2px solid hsl(69, 78%, 49%);
     border-radius: 50%;
     display: flex;
     margin-left: 10px;
@@ -55,8 +55,9 @@ body {
     background-color: hsl(69, 78%, 49%);
     }
 
-    h1, h2{font-family: Arial, Helvetica, sans-serif;
-        font-weight: 100;}
+    h1, h2{font-family: a-otf-jun-pro, sans-serif;
+        font-weight: 300;
+        font-style: normal;}
 
     h1{font-size: 50px;
         margin: 10px 0 10px 0;}
@@ -68,7 +69,9 @@ body {
 p{
     line-height: 2rem;
     font-size: 20px;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: a-otf-jun-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
     padding: 40px;
     transition: all 0.3s ease;
     color: hsl(69, 78%, 42%);
@@ -78,7 +81,7 @@ p{
     display: inline-block;
     width: 20px;
     height: 20px;
-    border:3px solid hsl(69, 78%, 42%);
+    border:2px solid hsl(69, 78%, 42%);
     border-radius: 100px;
     transition: all 2.0s ease;
 }
@@ -91,7 +94,7 @@ p{
     display: inline-block;
     width: 20px;
     height: 20px;
-    border:3px solid hsl(69, 78%, 42%);
+    border:2px solid hsl(69, 78%, 42%);
     border-radius: 100px;
     transition: all 2.0s ease;
 }
