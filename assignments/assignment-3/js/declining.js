@@ -58,7 +58,7 @@ const fetchFish = async () => {
 
     const container = document.getElementById('fish-container');
 
-    response.records.filter(record => record.fields.PopulationStatus=== "Active").forEach((fish) => {
+    response.records.filter(record => record.fields.PopulationStatus=== "Declining").forEach((fish) => {
    // console.log(fish);
     if(fish.fields.Image){
     console.log(fish.fields.Image[0].url);

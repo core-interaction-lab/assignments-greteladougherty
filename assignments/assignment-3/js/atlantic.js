@@ -39,17 +39,20 @@ const fetchFish = async () => {
     };
 
     const fishHabitat = {
-        NativeTo: 'Africa',
-        NativeTo: 'Antarctica',
-        NativeTo: 'Asia',
-        NativeTo: 'Africa',
-        NativeTo: 'Australia & Oceania',
-        NativeTo: 'Europe',
-        NativeTo: 'North America',
-        NativeTo: 'South America',
+       Habitat: 'atlantic',
+       Habitat: 'pacific',
+       Habitat: 'antarctic',
+       Habitat: 'arctic',
+       Habitat: 'asia',
+       Habitat: 'africa',
+       Habitat: 'australiaoceania',
+       Habitat: 'europe',
+       Habitat: 'gulfofmexico',
+       Habitat: 'northamerica',
+       Habitat: 'southamerica',
     };
 
-    const myArray = ['fish', , ''];
+    const myArray = ['atlantic', 'pacific', 'antarctic', 'arctic', 'africa', 'asia', 'australia', 'europe', 'gulfofmexico','northamerica', 'southamerica'];
 
     const ImageExists = true;
 
@@ -58,8 +61,8 @@ const fetchFish = async () => {
 
     const container = document.getElementById('fish-container');
 
-    response.records.filter(record => record.fields.PopulationStatus=== "Active").forEach((fish) => {
-   // console.log(fish);
+    response.records.filter(record => record.fields.Habitat.includes ("atlantic")).forEach((fish) => {
+        // console.log(fish);
     if(fish.fields.Image){
     console.log(fish.fields.Image[0].url);
     const Img = document.createElement('img');

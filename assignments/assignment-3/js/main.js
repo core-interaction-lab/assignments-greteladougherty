@@ -6,6 +6,24 @@ const db = {
 
 const airtableUrl = `https://api.airtable.com/v0/${db.id}/${db.table}?maxRecords=100&view=Grid%20view&api_key=${db.apiKey}`
 
+function myFunction() {
+    document.getElementById("nav").classList.toggle("show");
+  }
+  
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.filterbutton')) {
+      var dropdowns = document.getElementsByClassName("navContainer");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+
 const fetchFish = async () => {
     const response = await fetch(airtableUrl).then(data => data.json());
     //console.log(response);
@@ -18,6 +36,17 @@ const fetchFish = async () => {
     const fishStatus = {
         PopulationStatus: 'Active',
         PopulationStatus: 'Declining'
+    };
+
+    const fishHabitat = {
+        NativeTo: 'Africa',
+        NativeTo: 'Antarctica',
+        NativeTo: 'Asia',
+        NativeTo: 'Africa',
+        NativeTo: 'Australia & Oceania',
+        NativeTo: 'Europe',
+        NativeTo: 'North America',
+        NativeTo: 'South America',
     };
 
     const myArray = ['fish', , ''];
@@ -40,14 +69,41 @@ const fetchFish = async () => {
     container.append(Img)
     }
     //if (fish.fields.Habitat)
-    if(fish.fields.PopulationStatus){
+    //if(fish.fields.PopulationStatus){
         const status = document.createElement("p");
         status.innerHTML = fish.fields.PopulationStatus;
         status.classList.add("PopulationStatus");
-        container.append(status);
-        myArray.sort();
-        console.log(myArray.sort());
+        //container.append(status);
+        //myArray.sort();
+        //console.log(myArray.sort());
+    //}
+    if(fish.fields.CommonName){
+        const name = document.createElement("p");
+        name.innerHTML = fish.fields.CommonName;
+        name.classList.add("CommonName");
+        container.append(name);
+        //myArray.sort();
+        //console.log(myArray.sort());
     }
+    if(fish.fields.LatinName){
+        const sciname = document.createElement("p");
+        sciname.innerHTML = fish.fields.LatinName;
+        sciname.classList.add("LatinName");
+        container.append(sciname);
+        //myArray.sort();
+       // console.log(myArray.sort());
+    }
+    if(fish.fields.NativeTo){
+        const status = document.createElement("p");
+        status.innerHTML = fish.fields.NativeTo;
+        status.classList.add("NativeTo");
+        container.append(status);
+        //myArray.sort();
+        //console.log(myArray.sort());
+    }
+    var line = document.createElement("hr");
+    line.setAttribute("width", "95%");
+    container.append(line);
     });
 };
 
