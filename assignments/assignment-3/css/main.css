@@ -10,7 +10,7 @@ body{
 }
 
 .header{
-    background-color: hsl(0, 0%, 0%);
+    background-color: black;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
@@ -19,18 +19,19 @@ body{
     padding-left: 20px;
     margin: auto;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     box-sizing: border-box;
     align-items: center;
 }
 
 .headbuttons{
     display: flex;
-    justify-content: flex-end !important;
+    justify-content: space-between !important;
+    margin-right: 65px;
 }
 
 #title{
-    color: #e3fcfa;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
     font-size: 40px;
@@ -40,47 +41,40 @@ body{
 h2{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .navContainer {display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     flex-grow: 1;
     align-items: baseline;
-    background-color: hsl(0, 0%, 100%);
+    background-color: rgb(236, 238, 253);
     position: sticky;
     position: -webkit-sticky;
     top: 78px;}
 
-.sort {
+.filter {
     padding: 20px;
     padding-top: 0px;
     color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 10%;
 }
 
 .category1{
-    max-width: 30%;
+    max-width: 25%;
     margin: 20px;
     margin-top: 0px;
     flex-grow: 1;
 }
 
 .category2{
-    max-width: 30%;
+    max-width: 60%;
     margin: 20px;
     margin-top: 0px;
     flex-grow: 1;
-}
-
-.category3{
-    max-width: 45%;
-    margin: 20px;
-    margin-top: 0px;
-    /* flex-grow: 1; */
 }
 
 .navContainer ul {
@@ -108,14 +102,14 @@ button{
     font-weight:400;
     font-size: 14px;
     color: black;
-    background-color:#e3fcfa;
+    background-color:white;
     text-align:center;
     transition: all 0.2s;
     border: 1px solid black;
     margin-bottom: 5px;
     }
     button:hover{
-    background-color:#8fb4b1;
+    background-color:rgb(236, 238, 253);
     }
     @media all and (max-width:30em){
     a.button3{
@@ -131,5 +125,5 @@ button{
         margin-right: 35px;
     }
     #headbutton:hover{
-        background-color:#8fb4b1;
+        background-color:rgb(236, 238, 253);
         }
