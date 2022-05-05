@@ -1,0 +1,36 @@
+#album-container{
+    align-content: center;
+    display:flex;
+    justify-content: space-around;
+};
+
+* {
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+}
+
+article {
+    position: relative;
+    max-width: 500px;
+    width: 20%;
+    transition: all 0.3s ease;
+}
+
+article img {
+    width: 100%;
+}
+
+article p {
+    position: absolute;
+    background: black;
+    color: white;
+    padding: .5rem;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 12px;
+    margin: 0;
+    display: none;
+}
