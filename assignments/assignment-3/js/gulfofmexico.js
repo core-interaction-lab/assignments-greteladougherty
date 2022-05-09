@@ -60,7 +60,7 @@ const fetchFish = async () => {
     // console.log(myArray [2]);
 
     const container = document.getElementById('fish-container');
-    response.records.filter(record => record.fields.habitat.includes("atlantic")).forEach((fish) => {
+    response.records.filter(record => record.fields.habitat.includes("gulfofmexico")).forEach((fish) => {
    console.log(response.records[0]);
    if(fish.fields.Image){
     console.log(fish.fields.Image[0].url);
