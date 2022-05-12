@@ -317,3 +317,25 @@ font-size: 18px;
   top: 316px;
 }
 
+  .draggable{
+      width: 100px;
+      height: 100px;
+      align-content: center;
+      border: none;
+  }
+
+.margin{
+      margin-top: 10px;
+      margin-left: 10px;
+  }
+
+#bodycover{
+  background-color: white;
+  border: 3px solid magenta;
+  width: 900px;
+  height: 400px;
+z-index: 1;
+position: absolute;
+  left: 550px;
+  top: 177px; 
+}
