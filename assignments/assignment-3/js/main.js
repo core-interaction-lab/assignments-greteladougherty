@@ -108,3 +108,9 @@ const fetchFish = async () => {
 };
 
 fetchFish();
+
+//$(document).ready(function () {
+  //$(Img).stop().animate({ left: "-100px" }, 2000 ) function;
+
+  $(document).ready(function () {
+    $("#fishImg").stop().animate({ left: "-100px" }, 2000 )});
