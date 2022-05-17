@@ -55,6 +55,47 @@ bottom: 0px;
 margin: auto;
 text-align: center;}
 
+  .draggable{
+      width: 100px;
+      height: 100px;
+      align-content: center;
+      border: none;
+  }
+
+  #track1{
+    background-color: green;
+    z-index: 0;
+  }
+
+  #track2{
+    background-color: lightpink;
+    z-index: 1;
+  }
+
+  #track3{
+    background-color: rosybrown;
+  }
+
+  #track4{
+    background-color: royalblue;
+  }
+
+  #track5{
+    background-color: darkgoldenrod;
+  }
+
+  #track6{
+    background-color: darkorange;
+  }
+
+  #track7{
+    background-color: darkseagreen;
+  }
+
+  #track8{
+    background-color: darkslateblue;
+  }
+
   .draggable:hover {
     /* Start the shake animation and make the animation last for 0.5 seconds */
     animation: shake 0.2s;
@@ -69,6 +110,21 @@ text-align: center;}
     50% { transform: translate(-1px, 1px) rotate(0deg); }
     70% { transform: translate(2px, 1px) rotate(4deg); }
     100% { transform: translate(1px, -1px) rotate(0deg); }
+  }
+  
+.margin{
+      margin-top: 10px;
+      margin-left: 10px;
+  }
+
+  #bg {
+background-color: yellowgreen;
+
+    /*
+    background-image: linear-gradient(to bottom, rgb(169, 236, 33), rgb(40, 59, 0));
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    */
   }
 
 #manbody{
@@ -91,6 +147,42 @@ text-align: center;}
   z-index: 1;
 
 }
+
+/*
+audio::-webkit-media-controls-panel {
+  background-color: yellow;
+  width: 150px;
+}
+
+audio::-webkit-media-controls-mute-button {
+  background-color: orange;
+  border-radius: 50%;
+}
+
+audio::-webkit-media-controls-play-button:hover {
+  background-color:  orange;
+  border-radius: 50%;
+}
+
+audio::-webkit-media-controls-current-time-display {
+  color: orange;
+}
+audio::-webkit-media-controls-time-remaining-display {
+  color: orange;
+}
+audio::-webkit-media-controls-timeline {
+  background-color: orange;
+  border-radius: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+audio::-webkit-media-controls-volume-slider {
+  background-color: yellow;
+  border-radius: 25px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+*/
 
 #txt{
  position:absolute;
@@ -176,17 +268,21 @@ font-size: 18px;
   font-size: 14px;
  }
 
+ .alert{
+   display: flex;
+ }
+
  #button{
    width: 100%;
    height: 50px;
    background-color: yellow;
    color: orange;
-   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    font-size: 18px;
    border: 1px solid orange;
    outline: none;
    padding: 5px;
    text-align: center;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  }
 
  #button:hover{
@@ -255,6 +351,17 @@ font-size: 18px;
   top: 178px;
 }
 
+/*#bodycover{
+  background-color: white;
+  border: 3px solid magenta;
+  width: 900px;
+  height: 400px;
+z-index: 1;
+position: absolute;
+  left: 550px;
+  top: 177px; 
+}*/
+
 #shirt2{
   z-index: 2;
   position: absolute;
@@ -314,29 +421,7 @@ font-size: 18px;
 #pants5{
   z-index: 1;
   position: absolute;
-  left: 555px;
+  left: 558px;
   top: 316px;
 }
 
-  .draggable{
-      width: 100px;
-      height: 100px;
-      align-content: center;
-      border: none;
-  }
-
-.margin{
-      margin-top: 10px;
-      margin-left: 10px;
-  }
-
-#bodycover{
-  background-color: white;
-  border: 3px solid magenta;
-  width: 900px;
-  height: 400px;
-z-index: 1;
-position: absolute;
-  left: 550px;
-  top: 177px; 
-}
