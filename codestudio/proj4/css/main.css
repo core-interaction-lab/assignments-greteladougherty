@@ -47,7 +47,7 @@
     cursor: url(./cursor/boot.png);
   }
   
-  p{font-family: 'helvetica', sans-serif;
+  p{font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 font-size: 18px;
 z-index: 10;
 position: absolute;
@@ -249,7 +249,7 @@ audio::-webkit-media-controls-volume-slider {
    border: 1px solid orange;
    outline: none;
    border-radius: 0;
-   font-family: 'helvetica', sans-serif;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 font-size: 18px;
  }
 
@@ -258,13 +258,13 @@ font-size: 18px;
   height: 150px;
   width:20%;
   color: orange;
-  font-family: 'helvetica', sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 18px;
  }
 
  #about{
   text-align: left;
-  font-size: 12px;
+  font-size: 14px;
  }
 
  .alert{
@@ -276,6 +276,7 @@ font-size: 18px;
    height: 50px;
    background-color: yellow;
    color: orange;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    font-size: 18px;
    border: 1px solid orange;
    outline: none;
@@ -418,13 +419,13 @@ position: absolute;
   z-index: 1;
   position: absolute;
   left: 540px;
-  top: 130px;
+  top: 165px;
 }
 
 #pants5{
   z-index: 1;
   position: absolute;
-  left: 552px;
+  left: 555px;
   top: 316px;
 }
 
