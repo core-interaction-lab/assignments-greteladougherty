@@ -1,115 +1,133 @@
-@font-face {
-    font-family: marags;
-    src: url(../fonts/marags-webfont.woff2) format("woff2"),
-    url(../fonts/marags-webfont.woff) format("woff");
-}
-
-.header{
-    background-color: blanchedalmond;
-    width: 100%;
-}
-
-.header__text{
-    margin: auto;
-    max-width: 70%;
-    padding-bottom: 20px;
-    
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 40px;
-}
-
-.header__nav{
-    margin: 40px;
-}
-
-.header__nav ul{
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    display: flex;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 40px;
-}
-
-.header__nav_circle1 {
-    height: 40px;
-    width: 40px;
-    background-color: yellowgreen;
-    border: 3px solid olivedrab;
-    border-radius: 50%;
-    display: flex;
-    margin: 0 0 10px 0px ;
-  }
-
-.header__nav_circle1:hover{
-    background-color: olivedrab
-  }
-
-  .header__nav_circle2 {
-    height: 40px;
-    width: 40px;
-    background-color: olivedrab;
-    border: 3px solid yellowgreen;
-    border-radius: 50%;
-    display: flex;
-    margin: 0 0 10px 10px;
-  }
-
-.header__nav_circle2:hover{
-    
-}
-
-h1, h2{font-family: marags, Arial, Helvetica, sans-serif;}
-
-h2{color: olivedrab;}
-
 body {
     margin: auto;
-    background-color: blanchedalmond;
+    background-color: hsl(78, 100%, 92%);
 }
-.body__container {
-    background-color: yellowgreen;
+
+.nav__circles{
+    background-color: hsl(78, 100%, 92%);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    align-items: center;
+}
+
+.nav__circles ul{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    margin: 0px;
+    list-style-type: none;
+    display: flex;
+}
+
+.nav__circles_circle1 {
+    height: 40px;
+    width: 40px;
+    background-color: hsl(69, 78%, 49%);
+    border: 2px solid hsl(75, 50%, 40%);
+    border-radius: 50%;
+    display: flex;
+    margin: 0px ;
+  }
+
+  .nav__circles_circle1:hover{
+    background-color: hsl(75, 50%, 40%);
+  }
+
+  .nav__circles_circle2 {
+    height: 40px;
+    width: 40px;
+    background-color: hsl(75, 50%, 40%);
+    border: 2px solid hsl(69, 78%, 49%);
+    border-radius: 50%;
+    display: flex;
+    margin-left: 10px;
+  }
+
+  .nav__circles_circle2:hover{
+}
+.header{
+    margin: 40px;
+    width: 70%;
+}
+
+.container {
+    background-color: hsl(69, 78%, 49%);
     }
 
-.body__container_text {
-    max-width: 70%;
-    margin: auto;
-    padding: 20px 0 0 0;
-    }
+    h1, h2{font-family: a-otf-jun-pro, sans-serif;
+        font-weight: 300;
+        font-style: normal;}
+
+    h1{font-size: 50px;
+        margin: 10px 0 10px 0;}
+    
+    h2{color: hsl(75, 50%, 40%);
+    font-size: 30px;}
+    
 
 p{
     line-height: 2rem;
     font-size: 20px;
-    font-family: Helvetica, Arial, sans-serif;
-    color: olivedrab;
+    font-family: a-otf-jun-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding: 40px;
     transition: all 0.3s ease;
+    color: hsl(69, 78%, 42%);
+    width: 70%;
 }
-.breaker {
+.breaker1 {
     display: inline-block;
     width: 20px;
     height: 20px;
-    border:3px solid olivedrab;
+    border:2px solid hsl(69, 78%, 42%);
     border-radius: 100px;
     transition: all 2.0s ease;
 }
-.breaker:hover {
+.breaker1:hover {
     width: 200px;
     height: 50px;
     
 }
+.breaker2 {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border:2px solid hsl(69, 78%, 42%);
+    border-radius: 100px;
+    transition: all 2.0s ease;
+}
+.breaker2:hover {
+    width: 200px;
+    height: 20px;
+    
+}
 
-@media(max-width:900px) {
+@media(max-width:800px) {
+    .nav__circles{
+        margin: 20px;
+    }
+
     .header{
-        margin: 15px;
+        margin: 0px;
+        padding-left: 25px;
+        padding-right: 25px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    h1{font-size: 30px;}
+    
+    h2{ font-size: 24px;}
+
+    p{
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
     }
 }
-
 /*
-.grow-1:hover + p {
-line-height: .5;
-}
 .grow { 
     display: inline-block;
 transition: all .5s ease; 
@@ -117,8 +135,12 @@ color: olivedrab;
 }
 
 .grow:hover { 
-transform: scale(5.0);
-font-size: 1.5rem;
+    transform: scale(5.0);
+    font-size: 1.5rem;
+    }
+.grow-1:hover + p {
+line-height: .5;
 }
-
- 
+.alt{
+    color: black;
+}

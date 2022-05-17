@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assnmnt3</title>
+    <link href="./css/main.css" rel="stylesheet"/>
+    <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-1.9.1.js"
+  ></script>
+</head>
+<body>
+        <div class="header">
+            <h1 id="title"><a href="./index.html">100 Fish</a></h1>
+            <div class="headbuttons">
+                <button class="tagbtn">All Fish</button>
+            <button onclick="myFunction()" class="filterbutton">Filter</button>
+            <a href="./about.html"><button class="headbutton">About</button></a>
+            </div>
+        </div>
+        <section id="nav" class="navContainer">
+            <h2 class="filter">Filter:</h2>
+            <div class="category1">
+                <h2>By Population Status</h2>
+                <ul>
+                    <li>
+                        <a href="./index.html"><button>All</button></a>
+                    </li>
+                    <li>
+                        <a href="./active.html"><button>Active</button></a>
+                    </li>
+                    <li>
+                        <a href="./declining.html"><button>Declining</button></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="category2">
+                <h2>By Ocean</h2>
+                <ul>
+                    <li>
+                        <a href="./atlantic.html"><button>Atlantic Ocean</button></a>
+                    </li>
+                    <li>
+                        <a href="./pacific.html"><button>Pacific Ocean</button></a>
+                    </li>
+                    <li>
+                        <a href="./indian.html"><button>Indian Ocean</button></a>
+                    </li>
+                    <li>
+                        <a href="./arctic.html"><button>Arctic Ocean</button></a>
+                    </li>
+                    <li>
+                        <a href="./antarctic.html"><button>Antarctic Ocean</button></a>
+                    </li>
+                    <li>
+                        <a href="./gulfofmexico.html"><button>Gulf of Mexico</button></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="category3">
+                <h2>By Country</h2>
+                <ul>
+                    <li>
+                        <a href="./africa.html"><button>Africa</button></a>
+                    </li>
+                    <li>
+                        <a href="./asia.html"><button>Asia</button></a>
+                    </li>
+                    <li>
+                        <a href="./australia.html"><button>Australia & Oceania</button></a>
+                    </li>
+                    <li>
+                        <a href="./europe.html"><button>Europe</button></a>
+                    </li>
+                    <li>
+                        <a href="./northamerica.html"><button>North America</button></a>
+                    </li>
+                    <li>
+                        <a href="./southamerica.html"><button>South America</button></a>
+                    </li>
+                </ul>
+        </section>
+    <main>
+        <section id="fish-container">
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
