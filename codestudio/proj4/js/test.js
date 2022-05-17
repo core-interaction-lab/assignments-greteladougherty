@@ -1,6 +1,5 @@
 const hideHeads = function () {
     const heads = document.querySelectorAll('.head');
-
     heads.forEach(function(head) {
         head.style.display = 'none';
     })
@@ -8,7 +7,6 @@ const hideHeads = function () {
 
 const hideBods = function () {
     const bods = document.querySelectorAll('.bod');
-
     bods.forEach(function(bod) {
         bod.style.display = 'none';
     })
@@ -16,7 +14,6 @@ const hideBods = function () {
 
 const hideLegs = function () {
     const legs = document.querySelectorAll('.legs');
-
     legs.forEach(function(legs) {
         legs.style.display = 'none';
     })
@@ -25,13 +22,11 @@ const hideLegs = function () {
 const hideSkelly = function () {
     const skelly = document.getElementById('manbody');
         skelly.style.opacity = '0%';
-   
 };
 
 const showSkelly = function () {
     const skelly = document.getElementById('manbody');
         skelly.style.display = 'block';
-   
 };
 
 //document.addEventListener("keydown", function(){
@@ -506,43 +501,6 @@ document.getElementById("pants5").style.display = "block";
 }
 }
 })  
-
-$( function() {
-    $( ".draggable" ).draggable().resizable().rotatable();
-    iframeFix: true;
-    stack: ".draggable"
-    });
-   
-   // Getter
-   var iframeFix = $( ".draggable" ).draggable( "option", "iframeFix" );
-    
-   // Setter
-   $( ".draggable" ).draggable( "option", "iframeFix", true );
-
-   $(document).ready(function() {
-    var params = {
-        // Callback fired on rotation start.
-        start: function(event, ui) {
-        },
-        // Callback fired during rotation.
-        rotate: function(event, ui) {
-        },
-        // Callback fired on rotation end.
-        stop: function(event, ui) {
-        },
-        // Set the rotation center
-        rotationCenterOffset: {
-            top: 20,
-            left: 20
-        },
-        transforms: {
-            translate: '(50%, 50%)',
-            scale: '(2)'
-            //any other transforms
-        }
-    };
-    $('#target').rotatable(params);
-});
 
 const button=document.getElementById('button');
 
