@@ -1,0 +1,82 @@
+.content {
+    display: flex;
+    padding: 0 .5rem;
+}
+
+section {
+    padding: 0 .2rem;
+}
+
+.input-value {
+    display: inline-block;
+    min-width: 30px;
+    color: slateblue;
+    font-size: 30px;
+}
+
+form input {
+    display: flex;
+    margin-bottom: .5rem;
+    width: 150px;
+    color: slateblue;
+    font-size: 14px;
+    border: 2px solid olivedrab;
+}
+
+::placeholder{
+    color: olivedrab;
+}
+
+form input:focus {
+    border: px solid slateblue;
+    outline: none;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: olivedrab;
+    font-weight: 100;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: olivedrab;
+}
+
+#story{
+    display: none;
+    line-height: 36px;
+}
+
+button{
+    width: 157px;
+    color: slateblue;
+    font-size: 20px;
+    padding: 5px;
+    border: 2px solid olivedrab;
+    background-color: white;
+}
+
+button:hover{
+    color: white;
+    background-color: slateblue;
+    animation: shake2 5s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake2 {
+    0% { transform: translate(1px, 1px) rotate(-0.5deg); }
+    2% { transform: translate(-1px, -1px) rotate(3deg); }
+    4% { transform: translate(1px, 1px) rotate(-0.5deg); }
+    6% { transform: translate(-1px, -1px) rotate(4deg); }
+    8% { transform: translate(1px, 1px) rotate(-0.5deg); }
+    10% { transform: translate(-1px, -1px) rotate(4deg); }
+    12% { transform: translate(1px, 1px) rotate(-0.5deg); }
+    14% { transform: translate(-1px, -1px) rotate(4deg); }
+    16% { transform: translate(1px, 1px) rotate(-0.5deg); }
+    18% { transform: translate(0px, 0px) rotate(0deg); }
+    100% { transform: translate(1px, 1px) rotate(-0.5deg); }
+  }
