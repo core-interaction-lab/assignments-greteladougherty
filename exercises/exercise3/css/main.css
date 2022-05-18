@@ -1,29 +1,45 @@
+body{
+    box-sizing: border-box;
+}
+
 img {
     max-width: 100%;
 }
 
-.primary-header {display: flex;}
+.primary-header {
+    display: flex;
+}
 
-h1 {flex-grow: 1;}
+h1 {
+    flex-grow: 1;
+}
 
-.menu {display: flex;
-    align-items: center;}
+.menu {
+    display: flex;
+    align-items: center;
+}
 
 .menu ul {
     list-style-type: none;
     padding: 0;
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
 
 }
 
-menu ul li {
+.menu ul li {
     margin: 0 1rem; 
 }
 
-.posts {display: flex;
-        flex-wrap: wrap;}
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-.post{width: 50%;
+.post{
+    overflow: auto;
+    width: 50%;
     box-sizing: border-box;
-padding: 0 1rem;}
+    padding: 0 1rem;
+}

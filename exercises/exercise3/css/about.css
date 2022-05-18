@@ -9,7 +9,7 @@ body {
 
 .content {
     height: 100vh;
-    display: fle;
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -28,6 +28,7 @@ font-size: 50px;}
     font-size: 50px;
 }
 
-@media (max-width:813px) { .call-to-action h1 {
+@media (max-width:813px) { 
+    .call-to-action h1 {
     font-size: 80px;
 }}
