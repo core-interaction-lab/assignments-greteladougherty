@@ -15,13 +15,3 @@ formEl.addEventListener('submit', e => {
     
     });
 });
-
-var W = document.getElementById("story");
-if (W.style.display === "block")
-{
-document.getElementById("yeah").style.width = "200px";
-}
-else
-{
-document.getElementById("yeah").style.width = "500px";
-}
