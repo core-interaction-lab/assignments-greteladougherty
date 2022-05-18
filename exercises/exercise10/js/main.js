@@ -19,23 +19,32 @@ const addTask = item => {
 };
 
 const removeTask = index => {
-    deleteBtn.addEventListener('click', evt => {
         const tasksCopy = state.tasks.slice();
         tasksCopy.splice(index, 1);
         setTasks(tasksCopy);
-    });
+    }
 
 const buildTask = (item, index) => {
     const taskEl = document.createElement('article');
     const textEl = document.createElement('p');
     const deleteBtn = document.createElement('button');
+
+    deleteBtn.innerHTML = 'Delete';
+
+    deleteBtn.addEventListener('click', evt => {
+        removeTask(index);
+        buildTasks(state.tasks);
+    });
+
     taskEl.innerHTML = item;
+    
+    taskEl.append(textEl, deleteBtn);
     return taskEl;
 };
 
-const buildTasks = {
+const buildTasks = items => {
     taskContainer.innerHTML = '';
-    const taskEls = items.tasks.map(buildTask);
+    const taskEls = items.map(buildTask);
     taskContainer.append(...taskEls);
 };
 
@@ -44,7 +53,7 @@ const main = () => {
         const taskValue = taskTextArea.value;
         if (taskValue.length > 0) {
             addTask(taskValue);
-            buildTaskItems(state.tasks);
+            buildTasks(state.tasks);
         }
     });
 };
