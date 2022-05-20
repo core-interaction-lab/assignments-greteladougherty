@@ -36,19 +36,27 @@ const buildEpisodes = episodes => {
     const buildAlbums = albums => {
    albums.forEach(item => {
         console.log(item);
+        const wrap = document.createElement('div');
+        wrap.classList.add('album')
+
+        const info = document.createElement('div');
+        info.classList.add('info');
+
         const imgEl = document.createElement('img');
         imgEl.setAttribute('src', item.images[0].url);
+
+        const nameEL = document.createElement('div');
+        nameEL.innerHTML = item.name;
+        nameEL.classList.add("name");
         
-        const releaseEl = document.createElement("p")
+        const releaseEl = document.createElement("div")
         releaseEl.innerHTML = item.release_date;
-
-        const tracksEl = document.createElement("p")
-        tracksEl.innerHTML = item.total_tracks;
-
     
-        albumContainer.append(imgEl);
-        albumContainer.append(releaseEl);
-        albumContainer.append(tracksEl);
+        wrap.appendChild(imgEl);
+        wrap.appendChild(nameEL);
+        wrap.appendChild(releaseEl);
+        wrap.appendChild(info);
+        albumContainer.appendChild(wrap);
     });
     };
 
@@ -65,4 +73,5 @@ const buildEpisodes = episodes => {
         //buildEpisodes(response2);
         buildAlbums(response1.items);
     };
+
     main();

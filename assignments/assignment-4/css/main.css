@@ -1,14 +1,38 @@
 #album-container{
-    align-content: center;
-    display:flex;
-    justify-content: space-around;
+    margin-top: 100px;
+    height: 100px;
 };
+
+.album{
+    margin: 30px;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: yellowgreen;
+    font-weight: 100;
+    line-height: 30px;
+    padding: none;
+}
 
 * {
     box-sizing: border-box;
 }
+
 img {
-    max-width: 100%;
+    max-width: 200px;
+    border: 2px solid yellowgreen;
+}
+
+.info{
+margin: 30px;
 }
 
 article {
@@ -18,19 +42,28 @@ article {
     transition: all 0.3s ease;
 }
 
-article img {
-    width: 100%;
+body{
+    background-color: purple;
+    font-size: 16px;
+    color: yellowgreen;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-article p {
-    position: absolute;
-    background: black;
-    color: white;
-    padding: .5rem;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    font-size: 12px;
-    margin: 0;
-    display: none;
-}
+button{
+    background-color: purple;
+    color: yellowgreen;
+    border: 2px solid yellowgreen; 
+    min-height: 30px; 
+    min-width: 100px;
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  button:hover{
+    background-color: yellowgreen;
+    color: purple;
+  }
+
+  #slideshow{
+        margin-right: 30px;
+  }
